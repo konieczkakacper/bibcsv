@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bibcsv", "bibcsv\bibcsv.csproj", "{5E2AA502-C00B-40D4-ADB8-C6975DA78BDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E2AA502-C00B-40D4-ADB8-C6975DA78BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2AA502-C00B-40D4-ADB8-C6975DA78BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2AA502-C00B-40D4-ADB8-C6975DA78BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2AA502-C00B-40D4-ADB8-C6975DA78BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {895A5622-197C-4B11-ABB8-81EC5443FAFE}
+	EndGlobalSection
+EndGlobal
