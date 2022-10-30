@@ -119,8 +119,8 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private DataGridView dataGridView1;
         private TextBox textBox1;
         private Button button4;
+        public DataGridView dataGridView1;
     }
 }

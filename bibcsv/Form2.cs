@@ -12,11 +12,13 @@ namespace bibcsv
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        Form1 fgrid;
+        public Form2(Form1 fg)
         {
             InitializeComponent();
+            this.fgrid = fg;
         }
-
+     
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -28,6 +30,12 @@ namespace bibcsv
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            // ADD BUTTON
+            fgrid.dataGridView1.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text);
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }

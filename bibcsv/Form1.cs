@@ -7,6 +7,16 @@ namespace bibcsv
         public Form1()
         {
             InitializeComponent();
+      
+            dataGridView1.ColumnCount = 3;
+            dataGridView1.Columns[0].Name = "tytul";
+            dataGridView1.Columns[1].Name = "autor";
+            dataGridView1.Columns[2].Name = "id";
+
+            dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
         }
 
         public class Book
@@ -19,6 +29,7 @@ namespace bibcsv
         private void button1_Click(object sender, EventArgs e)
         {
             // ZAPIS
+            new ExportHelper().Export(loadCSV);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -42,8 +53,8 @@ namespace bibcsv
         private void button3_Click(object sender, EventArgs e)
         {
             // ADD
-            Form2 win2 = new Form2();
-            win2.Show();
+            Form2 finfo = new Form2(this);
+            finfo.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
